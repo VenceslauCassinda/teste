@@ -127,6 +127,7 @@ class AccoesAutenticacao {
   Future<bool> verificarSeAreaBastaTocares() async {
     String? codigoFonte = await _capsulaAccoesMediador.obterCodigoFonte();
     return (codigoFonte!.contains("basta tocares"));
+    
   }
 
   Future<bool> verificarSeAreaSistemaRegistadoNoDispositivoDoUsuario() async {
